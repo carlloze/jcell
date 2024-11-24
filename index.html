@@ -60,9 +60,8 @@
             let mensagem = document.getElementById("entrada").value;
             
             const tiposPecas = {
-                "placa de carga":                    "Placa de carga",
+                "placa de carga":"Placa de carga",
                 "tampa":"Tampa",
-                    
                 "cola": "Cola",
                 "frontal": "Tela",
                 "tela": "Tela",
@@ -122,7 +121,7 @@
             }
 
             let total = listaFormatada.length;
-            let mensagemFinal = "Olá, poderia separar por favor\n\n" + listaFormatada.join("\n") + \n\nHá um total de ${total} peças, favor conferir por gentileza.;
+            let mensagemFinal = "Olá, poderia separar por favor\n\n" + listaFormatada.join("\n") + "\n\n Há um total de " + total +" peças, favor conferir por gentileza.";
 
             document.getElementById("resultado").innerText = mensagemFinal;
         }
